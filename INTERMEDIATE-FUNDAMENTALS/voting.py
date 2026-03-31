@@ -9,13 +9,6 @@ print("""
       
 """)
 
-"""
-choice =  input("Who do you want to vote for: ")
-
-voted = choice.capitalize()
-print(f"you voted for : {voted}")
-
-"""
 aspirants = {
 
     "John" : 0,
@@ -25,11 +18,12 @@ aspirants = {
     "Liam" : 0
 }
 i = 0
-while i < 4:
+while i < 10:
     choice  = input("choose one candidate : ")
     
     if choice.capitalize() not in aspirants:
         print("No such aspirant!!!!")
+        break
     else:
         voted = choice.capitalize()
     #Assigning the scores to individual names
